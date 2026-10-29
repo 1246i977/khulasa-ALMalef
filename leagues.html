@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترتيب الدوريات - خلاصة الملاعب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- طبقة التعتيم للقائمة الجانبية -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- القائمة الجانبية المنسدلة الموحدة (Off-Canvas Sidebar) -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>⚽ القائمة الرئيسية</h3>
+            <button id="closeSidebar" class="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="matches.html">جدول المباريات</a></li>
+            <li><a href="media.html">معرض التحليلات</a></li>
+            <li><a href="leagues.html">ترتيب الدوريات</a></li>
+            <li><a href="players.html">ترتيب اللاعبين</a></li>
+            <li><a href="transfers.html">سوق الانتقالات</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </aside>
+
+    <!-- الترويسة الموحدة الشاملة -->
+    <header>
+        <div class="top-bar">
+            <!-- زر فتح القائمة الجانبية -->
+            <button id="menuToggle" class="menu-toggle" title="القائمة">☰</button>
+            
+            <div>
+                <h1>خلاصة الملاعب</h1>
+                <p class="subtitle">تغطية شاملة لأحدث الأخبار والتحليلات الرياضية</p>
+            </div>
+
+            <!-- مربع البحث العام بالترويسة -->
+            <div class="header-search">
+                <input type="text" id="globalSearch" placeholder="🔍 بحث في الموقع...">
+            </div>
+
+            <!-- الساعة والتاريخ الحي بالترويسة -->
+            <div id="liveClock" class="header-clock">⏱️ جاري تحميل الوقت...</div>
+        </div>
+    </header>
+
+
+    <!-- المحتوى الرئيسي -->
+    <main class="container">
+        
+        <section class="card">
+            <h2>📊 جدول ترتيب الدوري الإسباني (LaLiga)</h2>
+            <p>متابعة النقاط والأهداف لأندية صدارة الدوري</p>
+        </section>
+
+        <!-- جدول الترتيب -->
+        <section class="card table-section">
+            <table class="matches-table standings-table">
+                <thead>
+                    <tr>
+                        <th>المركز</th>
+                        <th>الفريق</th>
+                        <th>لعب</th>
+                        <th>فاز</th>
+                        <th>تعادل</th>
+                        <th>خسر</th>
+                        <th>له / عليه</th>
+                        <th>النقاط</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="rank rank-1">1</span></td>
+                        <td class="team-name">ريال مدريد ⚪</td>
+                        <td>38</td>
+                        <td>29</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>87 / 26</td>
+                        <td><span class="points">95</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank rank-2">2</span></td>
+                        <td class="team-name">برشلونة 🔴🔵</td>
+                        <td>38</td>
+                        <td>26</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>79 / 44</td>
+                        <td><span class="points">85</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank rank-3">3</span></td>
+                        <td class="team-name">جيرونا 🔴⚪</td>
+                        <td>38</td>
+                        <td>25</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>85 / 46</td>
+                        <td><span class="points">81</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank rank-4">4</span></td>
+                        <td class="team-name">أتلتيكو مدريد 🔴⚪</td>
+                        <td>38</td>
+                        <td>24</td>
+                        <td>4</td>
+                        <td>10</td>
+                        <td>70 / 43</td>
+                        <td><span class="points">76</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ <strong>خلاصة الملاعب</strong> | حاتم علي المطهر</p>
+    </footer>
+ <script src="main.js"></script>
+</body>
+</html>
+

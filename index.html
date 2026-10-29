@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خلاصة الملاعب - الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- طبقة التعتيم والقائمة الجانبية -->
+    <div id="overlay" class="overlay"></div>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>⚽ القائمة الرئيسية</h3>
+            <button id="closeSidebar" class="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="matches.html">جدول المباريات</a></li>
+            <li><a href="media.html">معرض التحليلات</a></li>
+            <li><a href="leagues.html">ترتيب الدوريات</a></li>
+            <li><a href="players.html">ترتيب اللاعبين</a></li>
+            <li><a href="transfers.html">سوق الانتقالات</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </aside>
+
+    <!-- الترويسة الموحدة مع زر القائمة والبحث والساعة -->
+    <header>
+        <div class="top-bar">
+            <button id="menuToggle" class="menu-toggle" title="القائمة">☰</button>
+            
+            <div>
+                <h1>خلاصة الملاعب</h1>
+                <p class="subtitle">تغطية شاملة لأحدث الأخبار والتحليلات الرياضية</p>
+            </div>
+
+            <div class="header-search">
+                <input type="text" id="globalSearch" placeholder="🔍 بحث في الموقع...">
+            </div>
+
+            <div id="liveClock" class="header-clock">⏱️ جاري تحميل الوقت...</div>
+        </div>
+    </header>
+
+    <!-- محتوى الصفحة الرئيسية الإخباري -->
+    <main class="container">
+
+        <!-- قسم ملخص أحدث المباريات -->
+        <section class="card">
+            <h2>🏆 أهم مواجهات اليوم</h2>
+            <div style="display: flex; gap: 10px; overflow-x: auto; padding: 10px 0;">
+                <div style="background: rgba(15, 23, 42, 0.8); padding: 12px; border-radius: 8px; min-width: 200px; text-align: center;">
+                    <small style="color: #38bdf8;">الدوري الإسباني</small>
+                    <p style="margin: 5px 0; font-weight: bold;">ريال مدريد ⚪ vs 🔴🔵 برشلونة</p>
+                    <span style="color: #00ff88; font-size: 12px;">22:00 الليلة</span>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.8); padding: 12px; border-radius: 8px; min-width: 200px; text-align: center;">
+                    <small style="color: #38bdf8;">الدوري السعودي</small>
+                    <p style="margin: 5px 0; font-weight: bold;">الاتحاد 1 - 2 الهلال</p>
+                    <span style="color: #ff4757; font-size: 12px;">انتهت</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم آخر الأخبار الرياضية -->
+        <section class="card">
+            <h2>📰 آخر الأخبار والتغطيات</h2>
+            <div class="news-grid">
+                
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=500&q=80" alt="خبر رياضي">
+                    <div class="news-content">
+                        <h3>استعدادات مكثفة للكلاسيكو المرتقب</h3>
+                        <p>تتجه أنظار عشاق الكرة العالمية نحو ملعب المواجهة المرتقبة بين القطبين في صراع الصدارة.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=500&q=80" alt="خبر رياضي">
+                    <div class="news-content">
+                        <h3>حركة الانتقالات الصيفية تشتعل</h3>
+                        <p>أندية الدوريات الكبرى تبدأ التحرك لحسم الصفقات القوية قبل إغلاق نافذة الانتقالات.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ <strong>خلاصة الملاعب</strong> | حاتم علي المطهر</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

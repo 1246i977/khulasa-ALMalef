@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوق الانتقالات - خلاصة الملاعب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- طبقة التعتيم للقائمة الجانبية -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- القائمة الجانبية المنسدلة الموحدة (Off-Canvas Sidebar) -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>⚽ القائمة الرئيسية</h3>
+            <button id="closeSidebar" class="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="matches.html">جدول المباريات</a></li>
+            <li><a href="media.html">معرض التحليلات</a></li>
+            <li><a href="leagues.html">ترتيب الدوريات</a></li>
+            <li><a href="players.html">ترتيب اللاعبين</a></li>
+            <li><a href="transfers.html">سوق الانتقالات</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </aside>
+
+    <!-- الترويسة الموحدة الشاملة -->
+    <header>
+        <div class="top-bar">
+            <!-- زر فتح القائمة الجانبية -->
+            <button id="menuToggle" class="menu-toggle" title="القائمة">☰</button>
+            
+            <div>
+                <h1>خلاصة الملاعب</h1>
+                <p class="subtitle">تغطية شاملة لأحدث الأخبار والتحليلات الرياضية</p>
+            </div>
+
+            <!-- مربع البحث العام بالترويسة -->
+            <div class="header-search">
+                <input type="text" id="globalSearch" placeholder="🔍 بحث في الموقع...">
+            </div>
+
+            <!-- الساعة والتاريخ الحي بالترويسة -->
+            <div id="liveClock" class="header-clock">⏱️ جاري تحميل الوقت...</div>
+        </div>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <main class="container">
+        
+        <section class="card">
+            <h2>🔄 رادار الانتقالات المباشر</h2>
+            <p>تغطية مستمرة لأخبار الميركاتو والصفقات الحسومة في الدوريات الكبرى</p>
+        </section>
+
+        <!-- شبكة الأخبار والصفقات -->
+        <div class="analysis-grid">
+            
+            <article class="card transfer-card">
+                <span class="badge badge-official">صفقة رسمية 🟢</span>
+                <h3>انتقال رسمياً إلى صفوف الفريق</h3>
+                <p>إعلان الإدارة عن إتمام كافة الإجراءات والفحوصات الطبية للاعب لتوقيع العقد الجديد.</p>
+                <div class="transfer-details">
+                    <span>من: <strong>نادي سابق</strong></span>
+                    <span>إلى: <strong>ريال مدريد ⚪</strong></span>
+                </div>
+            </article>
+
+            <article class="card transfer-card">
+                <span class="badge badge-talks">مفاوضات متقدمة 🟡</span>
+                <h3>مفاوضات مكثفة لحسم الصفقة</h3>
+                <p>إدارة النادي تواصل المحادثات مع وكيل الأعمال للوصول إلى اتفاق نهائي قبل إغلاق الميركاتو.</p>
+                <div class="transfer-details">
+                    <span>من: <strong>الدوري الإنجليزي</strong></span>
+                    <span>إلى: <strong>الاتحاد 🟡⬛</strong></span>
+                </div>
+            </article>
+
+            <article class="card transfer-card">
+                <span class="badge badge-rumor">شائعات الميركاتو 🔵</span>
+                <h3>اهتمام جديد بالتعاقد في الصيف</h3>
+                <p>تقارير صحفية تشير إلى دخول عدة أندية في سباق التعاقد مع اللاعب خلال الفترة القادمة.</p>
+                <div class="transfer-details">
+                    <span>الوجهة المحتملة: <strong>الدوري الإسباني</strong></span>
+                </div>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ <strong>خلاصة الملاعب</strong> | حاتم علي المطهر</p>
+    </footer>
+ <script src="main.js"></script>
+
+</body>
+</html>

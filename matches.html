@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خلاصة الملاعب - جدول المباريات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- طبقة التعتيم والقائمة الجانبية المنسدلة -->
+    <div id="overlay" class="overlay"></div>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>⚽ القائمة الرئيسية</h3>
+            <button id="closeSidebar" class="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="matches.html" class="active">جدول المباريات</a></li>
+            <li><a href="media.html">معرض التحليلات</a></li>
+            <li><a href="leagues.html">ترتيب الدوريات</a></li>
+            <li><a href="players.html">ترتيب اللاعبين</a></li>
+            <li><a href="transfers.html">سوق الانتقالات</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </aside>
+
+    <!-- الترويسة الموحدة -->
+    <header>
+        <div class="top-bar">
+            <button id="menuToggle" class="menu-toggle" title="القائمة">☰</button>
+            
+            <div>
+                <h1>خلاصة الملاعب</h1>
+                <p class="subtitle">جدول مباريات اليوم وأهم البطولات</p>
+            </div>
+
+            <div class="header-search">
+                <input type="text" id="globalSearch" placeholder="🔍 بحث في المباريات...">
+            </div>
+
+            <div id="liveClock" class="header-clock">⏱️ جاري تحميل الوقت...</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>🏆 أهم مباريات اليوم</h2>
+            <p>متابعة لحظية لأبرز مواجهات البطولات المحلية والدولية</p>
+
+            <!-- أزرار الفلترة التفاعلية -->
+            <div class="filters-container" style="margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap;">
+                <button class="filter-btn active-filter" data-status="all">الكل</button>
+                <button class="filter-btn" data-status="upcoming">قريباً</button>
+                <button class="filter-btn" data-status="finished">انتهت</button>
+            </div>
+
+            <!-- جدول المباريات -->
+            <div style="overflow-x: auto;">
+                <table class="matches-table">
+                    <thead>
+                        <tr>
+                            <th>البطولة</th>
+                            <th>الفريق الأول</th>
+                            <th>التاريخ والوقت / النتيجة</th>
+                            <th>الفريق الثاني</th>
+                            <th>الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-status="upcoming">
+                            <td>الدوري الإسباني</td>
+                            <td>ريال مدريد ⚪</td>
+                            <td>الأحد 2026/09/20 - 22:00</td>
+                            <td>🔴🔵 برشلونة</td>
+                            <td><span class="status-badge upcoming">قريباً</span></td>
+                        </tr>
+                        <tr data-status="finished">
+                            <td>الدوري السعودي</td>
+                            <td>الاتحاد 🟡</td>
+                            <td>1 - 2</td>
+                            <td>🔵 الهلال</td>
+                            <td><span class="status-badge finished">انتهت</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ <strong>خلاصة الملاعب</strong> | حاتم علي المطهر</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
